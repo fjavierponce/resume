@@ -1,0 +1,237 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=[rgb]{0, 0.1,0.5},    
+    urlcolor=[rgb]{0,0.1,0.5},
+}
+
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Title
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\headerrow
+	{\LARGE \textbf{Francisco Javier Ponce Cruz}}
+	{\href{https://github.com/fjavierponce}{github.com/fjavierponce}}
+\\
+\headerrow
+	{fco.poncecruz@gmail.com \textbullet \ \ (+52) 55 23 44 41 96}
+	{Java,  \CPP, Python}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	%%% SKYTOUCH %%%
+	\item
+	\headerrow
+		{\textbf{SkyTouch Technology (via Nearsoft)}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{Software Engineer}}
+		{\emph{10/2018 – Present}}
+	\begin{itemize*}
+		\item Design, implement the back-end, test and release new features for the CHOICE Hotel OS.
+		\item Developed and released the interface with TravelClick iHotelier, which led to a new business opportunity closed-won.
+		\item Mentor junior software engineers and onboard new members for the team.
+		\item Working with Java 8, JUnit, AssertJ, Spring, Docker, RabbitMQ, Git, Maven, TypeScript, and Jenkins
+	\end{itemize*}
+
+	%%% Lending Club %%%
+	\item
+	\headerrow
+		{\textbf{Lending Club (via Globant)}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{Java Developer}}
+		{\emph{12/2017 – 10/2018}}
+	\begin{itemize*}
+		\item Led the development of the API Gateway for Borrower project, migrating to microservices architecture.
+		\item Developed the RESTful API for Investor project.
+		\item Worked with Java 8, JUnit, Spring, Maven, Struts2, Git, CloudBees and Liquibase.
+	\end{itemize*}
+
+	%%% Tom Sawyer %%%
+	\item
+	\headerrow
+		{\textbf{Tom Sawyer Software}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{Product Development Engineer}}
+		{\emph{07/2016 – 12/2017}}
+	\begin{itemize*}
+		\item Decreased startup time of the data visualization product by 40\%, creating a new classpath scanning mechanism. 
+		\item Improved the build system and DevOps infrastructure, by migrating the Ant-based build to Maven.
+		\item Integrated the Systems Engineering and Business Process modules into one Data visualization product.
+		\item Worked with Java 7, Spring, Ant, Maven, Subversion, Jenkins.
+	\end{itemize*}
+	
+	%%% Legosoft %%%
+	\item
+	\headerrow
+		{\textbf{LegoSoft Soluciones}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{Java Liferay Developer}}
+		{\emph{05/2015 – 06/2016}}
+	\begin{itemize*}
+		\item Lead the development of a social portal based on Liferay and Vaadin, in a team of 3 developers and 2 analysts.
+		\item Developed the CRM for the project UNIFIN insurance company, in a team of 3 developers.
+		\item Lead the integration of Vaadin and Liferay for new projects in the Company.
+		\item Worked with Java 7, Vaadin, Liferay, Spring, Sugar CRM, JavaScript, Subversion.
+	\end{itemize*}
+
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	%%% ESCOM %%%
+	\item 
+	\headerrow
+    		{\textbf{Instituto Polit\'ecnico Nacional}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{B.E. Computer Systems Engineering (Grade 8.78 / 10)}}
+		{\emph{August 2010 - February 2015}}
+	\begin{itemize*}
+		\item Thesis: A Software Testing methodology based on Functionality and Performance Metrics.
+	\end{itemize*}
+
+	%%% CTU %%%
+	\item 
+	\headerrow
+    		{\textbf{Czech Technical University in Prague}}
+		{\textbf{Czech Republic}}
+	\\
+	\headerrow
+		{\emph{International Exchange Program}}
+		{\emph{January 2013 - July 2013}}
+	\begin{itemize*}
+		\item I was awarded a scholarship among the 10 best students at my University to study abroad, at the Faculty of Information 
+		Technology FIT-CTU in Prague.
+	\end{itemize*}
+
+	%%% Batiz %%%
+	\item 
+	\headerrow
+    		{\textbf{Instituto Politécnico Nacional CECyT 9}}
+		{\textbf{Mexico City}}
+	\\
+	\headerrow
+		{\emph{Computer Technician}}
+		{\emph{January 2013 - July 2013}}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Leadership and Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Leadership and Awards}
+
+\begin{itemize}
+	\parskip=0.1em
+	
+	\item 
+	\headerrow
+    		{\textbf{ESCOM Exchange Students Group}}
+		{\textbf{08/2015 – 12/2015}}
+	\begin{itemize*}
+		\item Member of the Exchange Students Group, helped students through the process to pursue a scholarship to study abroad, 
+		and gave talks about my experience in the Czech Republic, to encourage them to apply.
+	\end{itemize*}
+
+	%%% CTU %%%
+	\item 
+	\headerrow
+    		{\textbf{Course: “Oratory, the art of public speaking” }}
+		{\textbf{01/2014 – 03/2014}}	\begin{itemize*}
+		\item Attended classes of Public speaking, speech planning, and body language techniques.
+	\end{itemize*}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	C, \CPP, Java, Clojure, \LaTeX, Python, Shell Script, SQL, TypeScript
+	\item[Technical skills:]
+	Agile (Scrum, Kanban)
+\end{description*}
+\end{indentsection}
+
+\end{document}
